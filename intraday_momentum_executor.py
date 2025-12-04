@@ -250,7 +250,7 @@ async def evaluate_and_trade_symbol(contract: Contract, sem: asyncio.Semaphore) 
 def _on_ib_disconnected():
     print("Disconnected from IB. Attempting to reconnect...")
     ib.disconnect()
-    ib.connect("127.0.0.1", 7497, clientId=777)
+    ib.connect("127.x.x.x", xxxx, clientId=xxx) # redacted
 
 
 ib.disconnectedEvent += _on_ib_disconnected
